@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EDODS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cucumber Forum's EDODS</h1>
+        </header>
+
+        <section class="description">
+            <p>Welcome to Cucumber Forum’s EDODS (Everyday-Object Drum Sequencer).</p>
+
+            <p>All the percussive sounds in the sequencer are sourced from common household objects. Some of the sounds featured include pots and pans, a dresser being kicked, and a ceramic bowl.</p>
+
+            <p>The tiles represent “steps” in the drum loop, indicating whether that part of the sequence activates the associated sound. They can be toggled on or off to create the desired rhythm or beat. The tempo slider adjusts the speed of the sequencer, and the reset button clears the grid entirely.</p>
+
+            <p>Above each track, a gear icon opens an effects panel that controls reverb, delay, and the wet/dry mix for each sound. To reset the effects, refresh the page.</p>
+
+            <p>What sets this sequencer apart is its unpredictability: not only are the tracks unlabeled, but they are randomly rearranged every time the page is loaded or refreshed. The only way to learn how to use this sequencer—and other virtual drum machines—is to experiment, even if it doesn’t sound perfect on the first few tries.</p>
+
+            <p>There’s no manual and no right or wrong way to use it, which is what makes it fun.</p>
+
+            <p>So, what are you waiting for? Get started!</p>
+
+            <p>—CF (also known as Benjamin Miller in real life)</p>
+        </section>
+
+        <!-- sequencer grid -->
+        <section class="audio-board">
+            <div class="grid">
+                <!-- buttons -->
+            </div>
+            <div class="controls">
+                <button class="play">Play</button>
+                <button class="stop hidden">Stop</button>
+                <button class="reset">Reset</button>
+                <div class="tempo-control">
+                    <label for="tempo">Tempo:</label>
+                    <input type="range" id="tempo" min="60" max="240" value="120" step="1">
+                    <span id="tempoValue">120</span> BPM
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio files -->
+        <!-- The audio files are labeled as what they most resembled based on my personal experience, it doesn't necessarily matter what the actual files are called due to the random nature of the drum machine itself. -->
+
+        <audio id="tAudio" src="audio/Tom.mp3"></audio>
+        <audio id="cAudio" src="audio/Clap.mp3"></audio>
+        <audio id="kAudio" src="audio/Kick.mp3"></audio>
+        <audio id="oAudio" src="audio/Open Hat.mp3"></audio>
+        <audio id="bAudio" src="audio/Boom.mp3"></audio>
+        <audio id="rAudio" src="audio/Ride.mp3"></audio>
+        <audio id="sAudio" src="audio/Snare.mp3"></audio>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
