@@ -32,6 +32,8 @@ header h1 {
 .description {
     margin-bottom: 30px;
     line-height: 1.6;
+    max-width: 40ch; /* Limits line length to ~70 characters */
+    word-wrap: break-word; /* Ensures long words don't overflow */
 }
 
 .description p {
