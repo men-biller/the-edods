@@ -47,13 +47,12 @@ header h1 {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ensure columns don't get too big */
+    display: grid; /* Changed to grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid */
     gap: 15px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 100%;
-    padding: 0 10px; /* Prevents overflow on small screens */
+    max-width: 100%; /* Ensures grid doesn't overflow */
 }
 
 .column {
@@ -207,8 +206,7 @@ button.reset {
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Smaller grid tiles */
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Slightly smaller grid tiles */
     }
 
     button {
@@ -224,7 +222,6 @@ button.reset {
 @media (max-width: 480px) {
     .grid {
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Even smaller grid tiles */
-        gap: 8px;
     }
 
     button {
