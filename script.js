@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const dryGainNode = audioContext.createGain();
 
                 // Load a reverb sample
+                // attribution: http://www.openairlib.net/auralizationdb/content/arbroath-abbey-sacristy
+                // website link: http://reverbjs.org 
                 fetch('audio/ArbroathAbbeySacristy.mp3')
                     .then(response => response.arrayBuffer())
                     .then(data => audioContext.decodeAudioData(data))
