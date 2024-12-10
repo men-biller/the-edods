@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ride: document.getElementById("rAudio"),
         snare: document.getElementById("sAudio"),
     };
-
+    // the code i built the sequencer off of was from https://codepen.io/dacqcastro/pen/ExjBNQg
     // Shuffle the keys of the sounds object
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
