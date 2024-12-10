@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const dryGainNode = audioContext.createGain();
 
                 // Load a reverb sample
-                fetch('http://reverbjs.org/Library/ArbthAbbeySacristy.m4a')
+                fetch('audio/ArbroathAbbeySacristy.mp3')
                     .then(response => response.arrayBuffer())
                     .then(data => audioContext.decodeAudioData(data))
                     .then(buffer => reverbNode.buffer = buffer);
