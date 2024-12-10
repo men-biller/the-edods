@@ -200,7 +200,6 @@ button.reset {
 }
 
 /* Media queries for smaller screens */
-/* while the code doesn't display neatly horizontally on mobile devices, you can simply just turn your phone sideways and it will properly display and function. this aspect also drove me insane because i didn't think of the fact that users can simply turn their phones sideways to correectly view all of the columns. */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
