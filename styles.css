@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 75ch; /* Limit the width to around 75 characters (approx. 60-70 chars depending on font) */
+    max-width: 50ch; /* Restrict to 50 characters width for a slimmer layout */
     text-align: left;
 }
 
