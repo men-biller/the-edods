@@ -11,32 +11,32 @@ body {
     color: #3e5d6e;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     min-height: 100vh;
     padding: 20px;
 }
 
 .container {
     width: 90%;
-    max-width: 600px; 
-    text-align: left; 
+    max-width: 800px; /* Increased max-width for larger screens */
+    text-align: left;
 }
 
 header h1 {
     margin-bottom: 20px;
     font-size: 2rem;
-    text-align: center; 
-    color: #3e5d6e; 
+    text-align: center;
+    color: #3e5d6e;
 }
 
 .description {
-    margin-bottom: 30px; 
-    line-height: 1.6; /* Adjusted for better readability */
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .description p {
-    margin-bottom: 10px; 
-    color: #3e5d6e; 
+    margin-bottom: 10px;
+    color: #3e5d6e;
 }
 
 .audio-board {
@@ -48,34 +48,36 @@ header h1 {
 
 .grid {
     display: flex;
-    justify-content: center;
-    gap: 15px; 
+    justify-content: space-between; /* Space between columns */
+    gap: 5px; /* Small gap between tracks */
     margin-bottom: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60px; 
-    padding: 10px; 
-    background-color: #d19c66; 
-    border-radius: 8px; 
+    flex: 1 1 14%; /* Distribute columns evenly */
+    padding: 10px;
+    background-color: #d19c66;
+    border-radius: 8px;
     position: relative;
+    min-width: 60px; /* Ensure columns don't get too small */
 }
 
 .track-name {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     text-align: center;
-    color: #3e5d6e; 
-    display: none; 
+    color: #3e5d6e;
+    display: none;
 }
 
 .square {
-    width: 50px;
-    height: 50px;
+    width: 40px; /* Size of the square buttons */
+    height: 40px;
     background: #444;
     border-radius: 5px;
     cursor: pointer;
@@ -83,11 +85,11 @@ header h1 {
 }
 
 .square.play {
-    background: #6f4f2a; 
+    background: #6f4f2a;
 }
 
 .square.active-btn {
-    background: #c58c47; 
+    background: #c58c47;
     transform: scale(1.1); /* Slightly larger for active squares */
 }
 
@@ -112,11 +114,11 @@ button {
 }
 
 button.play {
-    background-color: #28a745; 
+    background-color: #28a745;
 }
 
 button.stop {
-    background-color: #dc3545; 
+    background-color: #dc3545;
 }
 
 button.hidden {
@@ -142,7 +144,7 @@ button.hidden {
 
 /* Reset button */
 button.reset {
-    background-color: #007bff; 
+    background-color: #007bff;
 }
 
 /* Gear Icon and Effects Panel(s) */
@@ -194,5 +196,48 @@ button.reset {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .grid {
+        gap: 5px; /* Reduce the gap further for medium screens */
+    }
+
+    .column {
+        flex: 1 1 14%; /* Ensure columns distribute evenly on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller buttons on smaller screens */
+        padding: 8px 16px;
+    }
+
+    .tempo-control input {
+        width: 80%; /* Make tempo slider responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        gap: 5px;  /* Ensure the gap is minimal for very small screens */
+    }
+
+    .column {
+        flex: 1 1 14%;  /* Adjust column distribution to keep them in a row */
+    }
+
+    button {
+        font-size: 12px; /* Even smaller buttons */
+        padding: 6px 12px;
+    }
+
+    .tempo-control input {
+        width: 90%;
     }
 }
