@@ -7,36 +7,36 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4e3c1; /* Light brownish */
-    color: #3e5d6e; /* Light blue */
+    background: #f4e3c1;
+    color: #3e5d6e;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align to the top */
+    align-items: flex-start; 
     min-height: 100vh;
     padding: 20px;
 }
 
 .container {
     width: 90%;
-    max-width: 600px; /* Slimmer width for 80-character line length */
-    text-align: left; /* Align all text to the left */
+    max-width: 600px; 
+    text-align: left; 
 }
 
 header h1 {
     margin-bottom: 20px;
     font-size: 2rem;
-    text-align: center; /* Title remains centered */
-    color: #3e5d6e; /* Light blue */
+    text-align: center; 
+    color: #3e5d6e; 
 }
 
 .description {
-    margin-bottom: 30px; /* Add space below the description */
+    margin-bottom: 30px; 
     line-height: 1.6; /* Adjusted for better readability */
 }
 
 .description p {
-    margin-bottom: 10px; /* Slimmer spacing between paragraphs */
-    color: #3e5d6e; /* Light blue */
+    margin-bottom: 10px; 
+    color: #3e5d6e; 
 }
 
 .audio-board {
@@ -49,7 +49,7 @@ header h1 {
 .grid {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Buffer space between each column */
+    gap: 15px; 
     margin-bottom: 20px;
 }
 
@@ -59,7 +59,7 @@ header h1 {
     align-items: center;
     width: 60px; 
     padding: 10px; 
-    background-color: #d19c66; /* Rust orange */
+    background-color: #d19c66; 
     border-radius: 8px; 
     position: relative;
 }
@@ -69,8 +69,8 @@ header h1 {
     font-weight: bold;
     margin-bottom: 8px; 
     text-align: center;
-    color: #3e5d6e; /* Light blue */
-    display: none; /* Track names hidden */
+    color: #3e5d6e; 
+    display: none; 
 }
 
 .square {
@@ -83,11 +83,11 @@ header h1 {
 }
 
 .square.play {
-    background: #6f4f2a; /* Dark brown */
+    background: #6f4f2a; 
 }
 
 .square.active-btn {
-    background: #c58c47; /* Lighter rust orange */
+    background: #c58c47; 
     transform: scale(1.1); /* Slightly larger for active squares */
 }
 
@@ -112,11 +112,11 @@ button {
 }
 
 button.play {
-    background-color: #28a745; /* Green for play */
+    background-color: #28a745; 
 }
 
 button.stop {
-    background-color: #dc3545; /* Red for stop */
+    background-color: #dc3545; 
 }
 
 button.hidden {
@@ -142,7 +142,7 @@ button.hidden {
 
 /* Reset button */
 button.reset {
-    background-color: #007bff; /* Blue for reset */
+    background-color: #007bff; 
 }
 
 /* Gear Icon and Effects Panel(s) */
