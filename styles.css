@@ -10,16 +10,17 @@ body {
     background: #f4e3c1;
     color: #3e5d6e;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: flex-start;
     min-height: 100vh;
     padding: 20px;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px; /* Increased max-width for larger screens */
-    text-align: left;
+    width: 100%;
+    max-width: 70ch; 
+    text-align: left; 
+    margin: 0 auto; 
 }
 
 header h1 {
@@ -32,8 +33,8 @@ header h1 {
 .description {
     margin-bottom: 30px;
     line-height: 1.6;
-    max-width: 40ch; /* Limits line length to ~70 characters */
-    word-wrap: break-word; /* Ensures long words don't overflow */
+    max-width: 40ch; 
+    word-wrap: break-word;
 }
 
 .description p {
@@ -50,22 +51,22 @@ header h1 {
 
 .grid {
     display: flex;
-    justify-content: space-between; /* Space between columns */
-    gap: 5px; /* Small gap between tracks */
+    justify-content: space-between; 
+    gap: 5px; 
     margin-bottom: 20px;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap; 
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 14%; /* Distribute columns evenly */
+    flex: 1 1 14%; 
     padding: 10px;
     background-color: #d19c66;
     border-radius: 8px;
     position: relative;
-    min-width: 60px; /* Ensure columns don't get too small */
+    min-width: 60px; 
 }
 
 .track-name {
@@ -78,7 +79,7 @@ header h1 {
 }
 
 .square {
-    width: 40px; /* Size of the square buttons */
+    width: 40px; 
     height: 40px;
     background: #444;
     border-radius: 5px;
@@ -208,34 +209,34 @@ button.reset {
     }
 
     .grid {
-        gap: 5px; /* Reduce the gap further for medium screens */
+        gap: 5px; 
     }
 
     .column {
-        flex: 1 1 14%; /* Ensure columns distribute evenly on smaller screens */
+        flex: 1 1 14%;
     }
 
     button {
-        font-size: 14px; /* Smaller buttons on smaller screens */
+        font-size: 14px; 
         padding: 8px 16px;
     }
 
     .tempo-control input {
-        width: 80%; /* Make tempo slider responsive */
+        width: 80%; 
     }
 }
 
 @media (max-width: 480px) {
     .grid {
-        gap: 5px;  /* Ensure the gap is minimal for very small screens */
+        gap: 5px;  
     }
 
     .column {
-        flex: 1 1 14%;  /* Adjust column distribution to keep them in a row */
+        flex: 1 1 14%;  
     }
 
     button {
-        font-size: 12px; /* Even smaller buttons */
+        font-size: 12px; 
         padding: 6px 12px;
     }
 
