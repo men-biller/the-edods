@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 50ch; /* Restrict to 50 characters width for a slimmer layout */
+    max-width: 70ch; /* Maximum line length capped at 70 characters */
     text-align: left;
 }
 
