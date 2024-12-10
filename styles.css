@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 70ch; /* Maximum line length capped at 70 characters */
     text-align: left;
 }
@@ -58,7 +58,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 14%;
+    flex: 1 1 auto;
     padding: 10px;
     background-color: #d19c66;
     border-radius: 8px;
@@ -130,10 +130,11 @@ button.hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 70ch;
 }
 
 #tempo {
-    width: 80%;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -164,6 +165,7 @@ button.reset {
     top: 40px;
     left: 0;
     width: 100%;
+    max-width: 70ch; /* Restrict effects panel width */
     z-index: 10;
 }
 
@@ -202,15 +204,14 @@ button.reset {
 /* Media queries for smaller screens */
 @media (max-width: 768px) {
     .container {
+        width: 100%;
+        max-width: 70ch;
         padding: 10px;
     }
 
     .grid {
         gap: 5px;
-    }
-
-    .column {
-        flex: 1 1 14%;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
     }
 
     button {
@@ -219,17 +220,20 @@ button.reset {
     }
 
     .tempo-control input {
-        width: 80%;
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    .grid {
-        gap: 5px;
+    .container {
+        width: 100%;
+        max-width: 70ch;
+        padding: 10px;
     }
 
-    .column {
-        flex: 1 1 14%;
+    .grid {
+        gap: 5px;
+        flex-wrap: wrap;
     }
 
     button {
@@ -238,6 +242,6 @@ button.reset {
     }
 
     .tempo-control input {
-        width: 90%;
+        width: 100%;
     }
 }
