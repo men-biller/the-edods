@@ -201,7 +201,7 @@ button.reset {
     }
 }
 
-/* Media queries for smaller screens */
+/* Media queries */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -211,7 +211,7 @@ button.reset {
 
     .grid {
         gap: 5px;
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        flex-wrap: wrap; 
     }
 
     button {
