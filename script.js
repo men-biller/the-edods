@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const wetGainNode = audioContext.createGain();
                 const dryGainNode = audioContext.createGain();
 
-                // Load a reverb sample
+                // reverb sample
                 // attribution: http://www.openairlib.net/auralizationdb/content/arbroath-abbey-sacristy
                 // website link: http://reverbjs.org 
                 fetch('audio/ArbroathAbbeySacristy.mp3')
@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     .then(data => audioContext.decodeAudioData(data))
                     .then(buffer => reverbNode.buffer = buffer);
 
+                // in order for the effects to properly route, i had to jerry rig the nodes so that delay and and dry/wet effects would also have reverb and vice versa. this specific segment of the code took 2 days of debugging and insanity to get to function. */
                 source.connect(gainNode);
                 gainNode.connect(dryGainNode);
                 gainNode.connect(delayNode);
