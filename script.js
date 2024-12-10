@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         snare: document.getElementById("sAudio"),
     };
 
-    // Shuffle the individual tracks, writing this actually broke the code several times because i forgot to route the actual audio samples along with the randomized tracks and their names (at first)
+    // Shuffle the keys of the sounds object
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const dryGainNode = audioContext.createGain();
 
                 // Load a reverb sample
-                // This is a free reverb library that i used to build the effects panel on a track-to-track basis. This is was the hardest part of the project because in order for the effects to properly enact, they had to be done so in an order that applied them in a cascading fashion
                 fetch('http://reverbjs.org/Library/ArbroathAbbeySacristy.m4a')
                     .then(response => response.arrayBuffer())
                     .then(data => audioContext.decodeAudioData(data))
@@ -204,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 squares.forEach((square, i) => {
                     square.classList.toggle("active-btn", i === step);
                     if (i === step && square.classList.contains("play")) {
-                        const sound = sounds[shuffledKeys[index]]; // Map sound to shuffled order
+                        const sound = sounds[shuffledKeys[index]]; // Map sound dynamically to shuffled order
                         sound.currentTime = 0;
                         sound.play();
                     }
