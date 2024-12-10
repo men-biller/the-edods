@@ -11,32 +11,32 @@ body {
     color: #3e5d6e;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; 
     min-height: 100vh;
     padding: 20px;
 }
 
 .container {
     width: 90%;
-    max-width: 70ch; /* Maximum line length capped at 70 characters */
-    text-align: left;
+    max-width: 600px; 
+    text-align: left; 
 }
 
 header h1 {
     margin-bottom: 20px;
     font-size: 2rem;
-    text-align: center;
-    color: #3e5d6e;
+    text-align: center; 
+    color: #3e5d6e; 
 }
 
 .description {
-    margin-bottom: 30px;
-    line-height: 1.6;
+    margin-bottom: 30px; 
+    line-height: 1.6; /* Adjusted for better readability */
 }
 
 .description p {
-    margin-bottom: 10px;
-    color: #3e5d6e;
+    margin-bottom: 10px; 
+    color: #3e5d6e; 
 }
 
 .audio-board {
@@ -48,36 +48,34 @@ header h1 {
 
 .grid {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: center;
+    gap: 15px; 
     margin-bottom: 20px;
-    flex-wrap: nowrap;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 14%;
-    padding: 10px;
-    background-color: #d19c66;
-    border-radius: 8px;
+    width: 60px; 
+    padding: 10px; 
+    background-color: #d19c66; 
+    border-radius: 8px; 
     position: relative;
-    min-width: 60px;
 }
 
 .track-name {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
     text-align: center;
-    color: #3e5d6e;
-    display: none;
+    color: #3e5d6e; 
+    display: none; 
 }
 
 .square {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: #444;
     border-radius: 5px;
     cursor: pointer;
@@ -85,11 +83,11 @@ header h1 {
 }
 
 .square.play {
-    background: #6f4f2a;
+    background: #6f4f2a; 
 }
 
 .square.active-btn {
-    background: #c58c47;
+    background: #c58c47; 
     transform: scale(1.1); /* Slightly larger for active squares */
 }
 
@@ -114,11 +112,11 @@ button {
 }
 
 button.play {
-    background-color: #28a745;
+    background-color: #28a745; 
 }
 
 button.stop {
-    background-color: #dc3545;
+    background-color: #dc3545; 
 }
 
 button.hidden {
@@ -144,7 +142,7 @@ button.hidden {
 
 /* Reset button */
 button.reset {
-    background-color: #007bff;
+    background-color: #007bff; 
 }
 
 /* Gear Icon and Effects Panel(s) */
@@ -196,48 +194,5 @@ button.reset {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .grid {
-        gap: 5px;
-    }
-
-    .column {
-        flex: 1 1 14%;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .tempo-control input {
-        width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid {
-        gap: 5px;
-    }
-
-    .column {
-        flex: 1 1 14%;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-
-    .tempo-control input {
-        width: 90%;
     }
 }
