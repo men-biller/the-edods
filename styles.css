@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 body {
     font-family: Arial, sans-serif;
     background: #2201a6;
@@ -190,7 +190,7 @@ button.reset {
     display: block;
     animation: slideDown 0.3s ease-in-out;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 @keyframes slideDown {
     from {
         opacity: 0;
