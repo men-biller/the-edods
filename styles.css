@@ -8,7 +8,6 @@
 body {
     font-family: 'Fira Code', monospace;
     font-weight: 400; /* Regular */
-    font-family: Arial, sans-serif;
     background: #2201a6;
     color: #ffffff;
     display: flex;
