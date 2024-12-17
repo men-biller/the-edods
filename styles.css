@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4e3c1;
-    color: #3e5d6e;
+    background: #4e6796;
+    color: #a1b8ce;
     display: flex;
     justify-content: center; 
     align-items: flex-start;
@@ -81,7 +81,7 @@ header h1 {
 .square {
     width: 40px; 
     height: 40px;
-    background: #444;
+    background: #553940;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
@@ -92,12 +92,12 @@ header h1 {
 }
 
 .square.active-btn {
-    background: #c58c47;
-    transform: scale(1.1); /* Slightly larger for active squares */
+    background: #cda63a;
+    transform: scale(1.1); /* Slightly larger for active squares because it looks nifty */
 }
 
 .square:hover {
-    background: #555; /* Highlight on hover for feedback */
+    background: #ecece7; /* Highlight on hover for feedback because it also looks better */
 }
 
 .controls {
@@ -159,7 +159,7 @@ button.reset {
 
 .effects-panel {
     display: none; /* Hidden by default to reduce clutter */
-    background-color: #444;
+    background-color: #553940;
     padding: 10px;
     margin-top: 10px;
     border-radius: 8px;
