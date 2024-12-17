@@ -63,7 +63,7 @@ header h1 {
     align-items: center;
     flex: 1 1 14%; 
     padding: 10px;
-    background-color: #d19c66;
+    background-color: #2201a6;
     border-radius: 8px;
     position: relative;
     min-width: 60px; 
@@ -81,18 +81,18 @@ header h1 {
 .square {
     width: 40px; 
     height: 40px;
-    background: #553940;
+    background: #4d3955;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
 
 .square.play {
-    background: #6f4f2a;
+    background: #e3c4a1;
 }
 
 .square.active-btn {
-    background: #cda63a;
+    background: #dc913c;
     transform: scale(1.1); /* Slightly larger for active squares because it looks nifty */
 }
 
