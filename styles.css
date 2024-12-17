@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #4e6796;
-    color: #a1b8ce;
+    background: #2201a6;
+    color: #ffffff;
     display: flex;
     justify-content: center; 
     align-items: flex-start;
@@ -27,7 +27,7 @@ header h1 {
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
-    color: #4a1d1c;
+    color: #ffffff;
 }
 
 .description {
@@ -39,7 +39,7 @@ header h1 {
 
 .description p {
     margin-bottom: 10px;
-    color: #4a1d1c;
+    color: #ffffff;
 }
 
 .audio-board {
@@ -63,7 +63,7 @@ header h1 {
     align-items: center;
     flex: 1 1 14%; 
     padding: 10px;
-    background-color: #2201a6;
+    background-color: #353a4a;
     border-radius: 8px;
     position: relative;
     min-width: 60px; 
@@ -74,25 +74,25 @@ header h1 {
     font-weight: bold;
     margin-bottom: 8px;
     text-align: center;
-    color: #4a1d1c;
+    color: #ffffff;
     display: none;
 }
 
 .square {
     width: 40px; 
     height: 40px;
-    background: #4d3955;
+    background: #e0ef0c;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
 
 .square.play {
-    background: #e3c4a1;
+    background: #ffffff;
 }
 
 .square.active-btn {
-    background: #dc913c;
+    background: #e0ef0c;
     transform: scale(1.1); /* Slightly larger for active squares because it looks nifty */
 }
 
@@ -190,7 +190,7 @@ button.reset {
     display: block;
     animation: slideDown 0.3s ease-in-out;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @keyframes slideDown {
     from {
         opacity: 0;
